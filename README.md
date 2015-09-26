@@ -1,9 +1,16 @@
-Captive
+## CAPTIVES
 
-Captive est un projet réalisé par des étudiants en année 2 et 3 à l'IIM.
+Captives est un projet de fiction interactive d’anticipation transmédia, qui propose une plongée dans l’un de nos futurs possibles et met en présence humains biologiques et humains digitalisés au travers d’une app mobile et d’une série digitale.
 
-A faire :
+Soutenu par le centre national du cinéma et de l’image animée (CNC) et récompensé par le prix PRIMI SACD de la création interactive et transmédia 2015, Captives est actuellement en développement.
 
-o Haute Priorité
+## Objectifs
 
--Faire tout le projet !
+* Réaliser un prototype fonctionnel de l’application sur smartphone.
+* Concevoir l’interface graphique animée de l’assistant personnel.
+* Intégrer l’IA développé par le laboratoire de recherche.
+* Effectuer une série d’expérimentation afin d’en déduire des recommandations pour le développement du projet Captives.
+
+## TODO
+
+* Tout le projet !
