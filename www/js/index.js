@@ -11,10 +11,10 @@ var app = {
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
-		backgroundImage.setAttribute('style', '-webkit-filter: blur(0px);filter: blur(0px);');
+		backgroundImage.setAttribute('style', '-webkit-filter: blur(0px);');
 
 		setTimeout(function(){
 			loading.setAttribute('style', 'display:none;');
-		}, 5000);
+		}, 3000);
     }
 };

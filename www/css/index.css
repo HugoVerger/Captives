@@ -22,12 +22,11 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	-webkit-filter: blur(15px);
-	filter: blur(15px);
 	position: fixed;
 	height: 100%;
 	left: 0;
 	right: 0;
-	transition: all 5s linear;
+	transition: all 3s linear;
 }
 
 #loading {
@@ -43,7 +42,7 @@ body {
 }
 
 #loading h1 {
-    font-size:54px;
+    font-size:81px;
     font-weight:lighter;
 	color:#FFFFFF;
     margin:0px 0px 50px 0px;
@@ -56,7 +55,7 @@ body {
     border-radius:4px;
     -webkit-border-radius:4px;
     color:#FFFFFF;
-    font-size:18px;
+    font-size:27px;
     margin:0px 30px;
     padding:2px 0px;
 }
