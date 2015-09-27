@@ -21,6 +21,7 @@ body {
 	background-size: contain; /* version standardisée */
 	background-position: center;
 	background-repeat: no-repeat;
+	-webkit-filter: blur(15px);
 	filter: blur(15px);
 	position: fixed;
 	height: 100%;
@@ -29,23 +30,23 @@ body {
 	transition: all 5s linear;
 }
 
-#app {
+#loading {
 	position: absolute;
-    height: 50px;                   /* text area height */
-    width: 270px;                   /* text area width */
+    height: 15%;                   /* text area height */
+    width: 60%;                   /* text area width */
     text-align:center;
     padding: 0px;
-    margin: -50px 0 0 -135px;
-	top: 27%;
-	left: 50%;
-	text-shadow: 0 0 5px rgba(0,0,0, 1);
+    margin: auto;
+	top: 20%;
+	left: 20%;
+	text-shadow: 0 0 10px rgba(0,0,0, 1);
 }
 
-h1 {
-    font-size:24px;
-    font-weight:normal;
+#loading h1 {
+    font-size:54px;
+    font-weight:lighter;
 	color:#FFFFFF;
-    margin:0px;
+    margin:0px 0px 50px 0px;
     overflow:visible;
     padding:0px;
     text-align:center;
@@ -55,7 +56,7 @@ h1 {
     border-radius:4px;
     -webkit-border-radius:4px;
     color:#FFFFFF;
-    font-size:12px;
+    font-size:18px;
     margin:0px 30px;
     padding:2px 0px;
 }
@@ -72,17 +73,17 @@ h1 {
 
 @keyframes fade {
     from { opacity: 1.0; }
-    50% { opacity: 0.4; }
+    50% { opacity: 0.3; }
     to { opacity: 1.0; }
 }
 
 @-webkit-keyframes fade {
     from { opacity: 1.0; }
-    50% { opacity: 0.4; }
+    50% { opacity: 0..; }
     to { opacity: 1.0; }
 }
 
 .blink {
-    animation:fade 1300ms infinite;
-    -webkit-animation:fade 1300ms infinite;
+    animation:fade 1500ms infinite;
+    -webkit-animation:fade 1500ms infinite;
 }
