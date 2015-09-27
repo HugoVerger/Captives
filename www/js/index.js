@@ -1,6 +1,6 @@
 var app = {
     initialize: function() {
-        document.addEventListener('click', this.onDeviceReady, false);
+        document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     onDeviceReady: function() {
         var parentElement = document.getElementById('deviceready');
