@@ -10,15 +10,14 @@ body {
     font-size:12px;
     margin:0px;
     padding:0px;
-    text-transform:uppercase;
 }
 
 #background-image {
 	background-image: url(../img/screen.png);
-	-webkit-background-size: contain; /* pour Chrome et Safari */
-	-moz-background-size: contain; /* pour Firefox */
-	-o-background-size: contain; /* pour Opera */
-	background-size: contain; /* version standardisée */
+	-webkit-background-size: 100% 100%; /* pour Chrome et Safari */
+	-moz-background-size: 100% 100%; /* pour Firefox */
+	-o-background-size: 100% 100%; /* pour Opera */
+	background-size: 100% 100%; /* version standardisée */
 	background-position: center;
 	background-repeat: no-repeat;
 	-webkit-filter: blur(15px);
@@ -26,36 +25,107 @@ body {
 	height: 100%;
 	left: 0;
 	right: 0;
-	transition: all 3s linear;
+	transition: all 3s ease;
 }
 
 #loading {
 	position: absolute;
-    height: 15%;                   /* text area height */
-    width: 60%;                   /* text area width */
+    height: 15%;
+    width: 60%;
     text-align:center;
     padding: 0px;
     margin: auto;
 	top: 20%;
 	left: 20%;
-	text-shadow: 0 0 10px rgba(0,0,0, 1);
+	text-transform: uppercase;
 }
 
 #loading h1 {
-    font-size:81px;
+    font-size:12vw;
     font-weight:lighter;
 	color:#FFFFFF;
     margin:0px 0px 50px 0px;
     overflow:visible;
     padding:0px;
     text-align:center;
+	text-shadow: 0 0 10px rgba(0,0,0, 1);
+}
+
+#chat {
+	position: absolute;
+    height: 80%;
+    width: 80%;
+	top: 15%;
+	left: 10%;
+	display:none;
+	font-size: 2.75vw;
+}
+
+#writer{
+	position: absolute;
+    width: 100%;
+	left: 0;
+	bottom: 0px;
+	display:none;
+	outline: none;
+}
+
+#writer input{
+    width: 100%;
+	box-sizing: border-box;
+	height: 60px;
+	padding: 5px 8px;
+    border:1px solid #aaa;
+	font-size: 2.75vw;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius:4px;
+}
+
+#question {
+	display: none;
+}
+
+#answer {
+	display: none;
+}
+
+.bubble
+{
+	position: relative;
+	display: inline-block;
+	padding: 3px 0px 3px 10px;
+	margin-bottom: 40px;
+	margin-top: 0px;
+	vertical-align: top;
+	line-height: 150%;
+	width: 90%;
+	left: 4%;
+	background-color: rgba(20, 69, 125, 0.55);
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	-moz-box-shadow: 2px 2px 15px #333;
+	-webkit-box-shadow: 2px 2px 15px #333;
+	box-shadow: 2px 2px 15px #333;
+}
+
+.bubble.blue
+{
+	background-color: rgba(20, 69, 125, 0.7);
+	color: white;
+}
+
+.bubble.white
+{
+	background-color: rgba(255, 255, 255, 0.7);
+	color: black;
 }
 
 .event {
-    border-radius:4px;
+    border-radius:10px;
     -webkit-border-radius:4px;
     color:#FFFFFF;
-    font-size:27px;
+    font-size:4vw;
     margin:0px 30px;
     padding:2px 0px;
 }

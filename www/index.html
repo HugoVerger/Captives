@@ -14,10 +14,20 @@
         <div id="loading">
             <h1>Captives</h1>
             <div id="deviceready" class="blink">
-                <p class="event listening">Start connection</p>
+                <p class="event listening">Click to start</p>
                 <p class="event received">Waking up...</p>
             </div>
         </div>
+		<div id="chat">
+			<p class="bubble blue">Hello !<br/>Ask me any question and I'll try to answer it by yes or no !</p>
+			<p id="question" class="bubble white"></p>
+			<p id="answer" class="bubble blue"></p>
+		</div>
+		<div id="writer">
+			<form onsubmit="app.submit(); return false;">
+				<input type="text" id="message" placeholder="Ask a question">
+			</form>
+		</div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
