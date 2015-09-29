@@ -21,7 +21,6 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	-webkit-filter: blur(15px);
-	filter: blur(15px);
 	position: fixed;
 	height: 100%;
 	left: 0;
@@ -123,8 +122,8 @@ body {
 }
 
 .event {
-    border-radius:50px;
-    -webkit-border-radius:50px;
+    border-radius:30px;
+    -webkit-border-radius:30px;
     color:#FFFFFF;
     font-size:4vw;
     margin:0px 30px;

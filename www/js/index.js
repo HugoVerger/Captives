@@ -4,7 +4,7 @@ var app = {
 
 		parentElement.querySelector('.listening').setAttribute('style', 'display:none;');
 		parentElement.querySelector('.received').setAttribute('style', 'display:block;');
-		document.getElementById('background-image').setAttribute('style', '-webkit-filter: blur(0px);filter: blur(0px);');
+		document.getElementById('background-image').setAttribute('style', '-webkit-filter: blur(0px);');
 
 		setTimeout(function(){
 			document.getElementById('loading').setAttribute('style', 'display:none;');
