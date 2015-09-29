@@ -1,13 +1,21 @@
 var app = {
-    onStart: function() {
-		var parentElement = document.getElementById('starter');
+    initialize: function() {
+		document.addEventListener('click', this.onClick, false);
+    },
+    onClick: function() {
+		document.removeEventListener('click', app.onClick, false);
+		var parentElement = document.getElementById('deviceready');
+		var listeningElement = parentElement.querySelector('.listening');
+		var receivedElement = parentElement.querySelector('.received');
+		var backgroundImage = document.getElementById('background-image');
+		var loading = document.getElementById('loading');
 
-		parentElement.querySelector('.listening').setAttribute('style', 'display:none;');
-		parentElement.querySelector('.received').setAttribute('style', 'display:block;');
-		document.getElementById('background-image').setAttribute('style', '-webkit-filter: blur(0px);');
+		listeningElement.setAttribute('style', 'display:none;');
+		receivedElement.setAttribute('style', 'display:block;');
+		backgroundImage.setAttribute('style', '-webkit-filter: blur(0px);');
 
 		setTimeout(function(){
-			document.getElementById('loading').setAttribute('style', 'display:none;');
+			loading.setAttribute('style', 'display:none;');
 			app.onWake();
 		}, 3000);
     },
