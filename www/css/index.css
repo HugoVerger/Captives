@@ -25,7 +25,7 @@ body {
 	height: 100%;
 	left: 0;
 	right: 0;
-	transition: all 3s linear;
+	transition: all 3s ease;
 }
 
 #loading {
@@ -123,7 +123,7 @@ body {
 
 .event {
     border-radius:30px;
-    -webkit-border-radius:30px;
+    -webkit-border-radius:4px;
     color:#FFFFFF;
     font-size:4vw;
     margin:0px 30px;
