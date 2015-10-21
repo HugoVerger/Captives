@@ -1,42 +1,61 @@
-document.addEventListener("deviceready", init, false);
-function init() {
-	Console.log("Device is ready.")
+if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/)) {
+	document.addEventListener("deviceready", init, false);
+} else {
+	init();
+}
+
+function init () {
+	rs = new RiveScript({utf8: true});
+	rs.loadFile([
+		"brain/begin.rive",
+		"brain/eliza.rive",
+		"brain/myself.rive"
+	], loading_done, loading_error);
+}
+
+function loading_done () {
+	$("#message").removeAttr("disabled");
+	$("#message").attr("placeholder", "Send a message");
+	$("#message").focus();
+
+	rs.sortReplies();
+}
+
+function loading_error (error) {
+	console.log("Error when loading files: " + error);
 }
 
 function sendMessage () {
 	$("#question").text($("#message").val());
 	$("#question").css("display", "block");
 	$("#answer").css("display", "none");
+	var text = $("#message").val();
+	$("#message").val("");
+
+	text = text.replace(/[éèêë]/gi, "e");
+	text = text.replace(/[éèêë]/gi, "e");
+	text = text.replace(/[àâä]/gi, "a");
+	text = text.replace(/[ïî]/gi, "i");
+	text = text.replace(/[üûù]/gi, "u");
+	text = text.replace(/[öô]/gi, "o");
+	text = text.replace(/[ç]/gi, "c");
+	text = text.replace(/[']/gi, " ");
+	text = text.replace(/[-]/gi, " ");
+	text = text.replace(/[?]/gi, " ");
+	text = text.replace(/[!]/gi, " ");
+	text = text.replace(/[\s]{2,}/g," ");
+	text = text.trim();
+
 	setTimeout(function(){
-		answer();
+		try {
+			var reply = rs.reply("local-user", text);
+			reply = reply.replace(/\n/g, "<br>");
+			$("#answer").text(reply);
+			$("#answer").css("display", "block");
+		} catch(e) {
+			window.alert(e.message + "\n" + e.line);
+			console.log(e);
+		}
 	}, 500);
 	return false;
-}
-
-function answer () {
-	var quotes = [
-		"It is certain.",
-		"It is decidedly so.",
-		"Without a doubt.",
-		"Yes, definitely.",
-		"You may rely on it.",
-		"As I see it, yes.",
-		"Most likely!",
-		"Probably yes.",
-		"Yes!",
-		"Signs point to yes.",
-		"It's better not to tell you now.",
-		"I cannot predict now.",
-		"Concentrate and ask again.",
-		"WTF is that question?!",
-		"Don't count on it.",
-		"My reply is no.",
-		"My sources say no.",
-		"The outlook is not so good.",
-		"I'm very doubtful...",
-		"Wesh !"
-	];
-	var quote = quotes[Math.floor(Math.random() * quotes.length)];
-	$("#answer").text(quote);
-	$("#answer").css("display", "block");
 }

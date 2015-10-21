@@ -6,22 +6,23 @@
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/chat.css" />
+		<link rel="stylesheet" type="text/css" href="css/chat.css" />
+		<script type="text/javascript" src="js/chat.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/rivescript.js"></script>
         <title>Captives</title>
     </head>
     <body>
 		<div id="background-image"></div>
 		<div id="chat">
-			<p class="bubble blue">Hello !<br/>Ask me any question and I'll try to answer it by yes or no !</p>
+			<p class="bubble blue">Hello !<br/>Ask me any question and I'll try to answer it !</p>
 			<p id="question" class="bubble white"></p>
 			<p id="answer" class="bubble blue"></p>
 		</div>
 		<div id="writer">
 			<form onSubmit="return sendMessage()">
-				<input type="text" id="message" placeholder="Ask a question">
+				<input type="text" id="message" autocomplete="off" disabled placeholder="Please wait... loading...">
 			</form>
 		</div>
-        <script type="text/javascript" src="js/chat.js"></script>
-		<script type="text/javascript" src="js/jquery.js"></script>
     </body>
 </html>
