@@ -1,1 +1,0 @@
-age,train,quel,goat,nom
