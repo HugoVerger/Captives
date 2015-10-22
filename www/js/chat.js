@@ -1,8 +1,9 @@
-if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/)) {
+/*if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/)) {
 	document.addEventListener("deviceready", init, false);
+	alert("phone detected");
 } else {
 	init();
-}
+}*/
 
 function init () {
 	rs = new RiveScript({utf8: true});
@@ -22,6 +23,7 @@ function loading_done () {
 }
 
 function loading_error (error) {
+	alert("Error, cannot load rive files");
 	console.log("Error when loading files: " + error);
 }
 

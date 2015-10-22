@@ -8,7 +8,7 @@ Soutenu par le centre national du cinéma et de l’image animée (CNC) et réco
 
 * Réaliser un prototype fonctionnel de l’application sur smartphone.
 * Concevoir l’interface graphique animée de l’assistant personnel.
-* Intégrer l’IA développé par le laboratoire de recherche.
+* Intégrer une IA développée par nos soins.
 * Effectuer une série d’expérimentation afin d’en déduire des recommandations pour le développement du projet Captives.
 
 ## TODO
