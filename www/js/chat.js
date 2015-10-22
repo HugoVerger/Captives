@@ -11,6 +11,7 @@ function init () {
 		"brain/begin.rive",
 		"brain/eliza.rive",
 		"brain/myself.rive"
+		//Ajoutez votre propre fichier ici
 	], loading_done, loading_error);
 }
 
