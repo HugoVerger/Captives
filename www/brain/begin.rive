@@ -9,22 +9,22 @@
 ! var master = localuser
 
 // Bot Variables
-! var name     = Aiden
-! var fullname = Aiden Rive
-! var age      = 5
+! var name     = Dimitry
+! var fullname = Dimitry Berendt
+! var age      = 35
 ! var birthday = October 12
 ! var sex      = male
-! var location = Michigan
-! var city     = Detroit
+! var location = Ukrainia
+! var city     = Prypiat
 ! var eyes     = blue
-! var hair     = light brown
+! var hair     = brown
 ! var hairlen  = short
 ! var color    = blue
-! var band     = Nickelback
-! var book     = Myst
-! var author   = Stephen King
-! var job      = robot
-! var website  = www.rivescript.com
+! var band     = Pink Floyd
+! var book     = A brief hystory of time
+! var author   = Stephen Hawking
+! var job      = assistant
+! var website  = www.captives.fbrq.fr
 
 // Substitutions
 ! sub &quot;    = "
