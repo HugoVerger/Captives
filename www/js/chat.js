@@ -1,5 +1,6 @@
 //init() est éxécutée au chargement de la page.
 function init () {
+	messages_sent = 0;
 	//Création d'une instance de RiveScript
 	rs = new RiveScript({utf8: true});
 	//Chargement des scripts .rive
@@ -34,43 +35,51 @@ function loading_error (error) {
 
 //sendMessage() est éxécutée lorsque l'utilisateur envoie son message, c'est lorsqu'il presse Enter dans le navigateur
 function sendMessage () {
-	//On affiche le message de l'utilisateur dans la bulle de question et on le supprime de la barre d'input.
-	$("#question").text($("#message").val());
-	$("#question").css("display", "block");
-	$("#answer").css("display", "none");
-	$("#message").val("");
+	if (messages_sent > 2)
+	{
+		document.location.href="bug.html";
+	}
+	else
+	{
+		//On affiche le message de l'utilisateur dans la bulle de question et on le supprime de la barre d'input.
+		$("#question").text($("#message").val());
+		$("#question").css("display", "block");
+		$("#answer").css("display", "none");
+		$("#message").val("");
 
-	//On récupère la valeur du message dans la variable text
-	var text = $("#message").val();
+		//On récupère la valeur du message dans la variable text
+		var text = $("#message").val();
 
-	//On modifie le message pour l'adapter aux critères anglophones de l'interpreteur RiveScript
-	text = text.replace(/[éèêë]/gi, "e");
-	text = text.replace(/[éèêë]/gi, "e");
-	text = text.replace(/[àâä]/gi, "a");
-	text = text.replace(/[ïî]/gi, "i");
-	text = text.replace(/[üûù]/gi, "u");
-	text = text.replace(/[öô]/gi, "o");
-	text = text.replace(/[ç]/gi, "c");
-	text = text.replace(/[']/gi, " ");
-	text = text.replace(/[-]/gi, " ");
-	text = text.replace(/[?]/gi, " ");
-	text = text.replace(/[!]/gi, " ");
-	text = text.replace(/[\s]{2,}/g," ");
-	text = text.trim();
+		//On modifie le message pour l'adapter aux critères anglophones de l'interpreteur RiveScript
+		text = text.replace(/[éèêë]/gi, "e");
+		text = text.replace(/[éèêë]/gi, "e");
+		text = text.replace(/[àâä]/gi, "a");
+		text = text.replace(/[ïî]/gi, "i");
+		text = text.replace(/[üûù]/gi, "u");
+		text = text.replace(/[öô]/gi, "o");
+		text = text.replace(/[ç]/gi, "c");
+		text = text.replace(/[']/gi, " ");
+		text = text.replace(/[-]/gi, " ");
+		text = text.replace(/[?]/gi, " ");
+		text = text.replace(/[!]/gi, " ");
+		text = text.replace(/[\s]{2,}/g," ");
+		text = text.trim();
 
-	setTimeout(function(){
-		try {
-			//On envoie le message et on récupère la réponse dans reply
-			var reply = rs.reply("local-user", text);
-			//On traite la réponse et on l'affiche dans la bulle de réponse
-			reply = reply.replace(/\n/g, "<br>");
-			$("#answer").text(reply);
-			$("#answer").css("display", "block");
-		} catch(e) {
-			window.alert(e.message + "\n" + e.line);
-			console.log(e);
-		}
-	}, 500);
+		setTimeout(function(){
+			try {
+				//On envoie le message et on récupère la réponse dans reply
+				var reply = rs.reply("local-user", text);
+				//On traite la réponse et on l'affiche dans la bulle de réponse
+				reply = reply.replace(/\n/g, "<br>");
+				$("#answer").text(reply);
+				$("#answer").css("display", "block");
+				messages_sent++;
+			} catch(e) {
+				window.alert(e.message + "\n" + e.line);
+				console.log(e);
+			}
+		}, 500);
+	}
 	return false;
 }
 

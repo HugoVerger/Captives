@@ -1,0 +1,22 @@
+body {
+	background-color: black;
+    font-family:Calibri,'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    margin:0px;
+    padding:0px;
+}
+
+p.bug {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	top: 20%;
+	font-size: 20vw;
+	margin: 0;
+	color:red;
+	text-shadow: 0 0 10vw #f00;
+	animation: blinker 0.75s linear infinite;
+}
+
+@keyframes blinker {
+	50% { opacity: 0.0; }
+}

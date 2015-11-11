@@ -6,7 +6,7 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-family:Calibri,'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
     margin:0px;
     padding:0px;
@@ -32,7 +32,7 @@ body {
     width: 80%;
 	top: 15%;
 	left: 10%;
-	font-size: 2.75vw;
+	font-size: 4vmin;
 }
 
 #writer{
@@ -46,10 +46,10 @@ body {
 #writer input{
     width: 100%;
 	box-sizing: border-box;
-	height: 15vw;
+	height: 12vmin;
 	padding: 5px 8px;
     border:1px solid #aaa;
-	font-size: 2.75vw;
+	font-size: 3.5vmin;
     box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
     border-radius:4px;
 	outline: none;
@@ -67,7 +67,7 @@ body {
 {
 	position: relative;
 	display: inline-block;
-	padding: 3px 0px 3px 10px;
+	padding: 5px 5px 5px 10px;
 	margin-bottom: 40px;
 	margin-top: 0px;
 	vertical-align: top;
@@ -93,4 +93,5 @@ body {
 {
 	background-color: rgba(255, 255, 255, 0.7);
 	color: black;
+	font-weight: bold;
 }
