@@ -1,11 +1,18 @@
+* {
+	-webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
 body {
+	-webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+	-webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+	-webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
 	background-color: black;
     font-family:Calibri,'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     margin:0px;
     padding:0px;
 }
 
-p.bug {
+#bug {
 	position: absolute;
 	text-align: center;
 	width: 100%;
@@ -15,8 +22,14 @@ p.bug {
 	color:red;
 	text-shadow: 0 0 10vw #f00;
 	animation: blinker 0.75s linear infinite;
+	opacity: 0;
 }
 
 @keyframes blinker {
-	50% { opacity: 0.0; }
+	50% { opacity: 1.0; }
+}
+
+@keyframes fadeout {
+	0% { opacity: 0.7; }
+	100% { opacity: 0; }
 }
