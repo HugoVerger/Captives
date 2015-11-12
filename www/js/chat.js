@@ -45,10 +45,9 @@ function sendMessage () {
 		$("#question").text($("#message").val());
 		$("#question").css("display", "block");
 		$("#answer").css("display", "none");
-		$("#message").val("");
-
 		//On récupère la valeur du message dans la variable text
 		var text = $("#message").val();
+		$("#message").val("");
 
 		//On modifie le message pour l'adapter aux critères anglophones de l'interpreteur RiveScript
 		text = text.replace(/[éèêë]/gi, "e");

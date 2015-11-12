@@ -12,7 +12,21 @@ body {
     padding:0px;
 }
 
-#bug {
+.phonecall {
+	background-image: url(../img/call.png);
+	-webkit-background-size: 100%; /* pour Chrome et Safari */
+	-moz-background-size: 100%; /* pour Firefox */
+	-o-background-size: 100%; /* pour Opera */
+	background-size: 100%; /* version standardisée */
+	background-position: center;
+	background-repeat: no-repeat;
+	position: fixed;
+	height: 100%;
+	left: 0;
+	right: 0;
+}
+
+.bug {
 	position: absolute;
 	text-align: center;
 	width: 100%;
@@ -30,6 +44,6 @@ body {
 }
 
 @keyframes fadeout {
-	0% { opacity: 0.7; }
+	0% { opacity: 0.5; }
 	100% { opacity: 0; }
 }
