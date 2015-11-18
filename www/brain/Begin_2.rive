@@ -1,0 +1,43 @@
+! version = 2.0
+
+// Bot variables
+
+! var name = Juste le Blanc
+! var age = 36
+! var gender = Homme
+! var color = rouge
+
+//Substitutions
+
+! sub j't = je te
+! sub j'suis = je suis
+! sub j'vais = je vais
+! sub j'me = je me
+! sub j't = je te
+! sub j'vous = je vous
+! sub j'nous = je nous
+! sub t'auras = tu auras
+! sub t'as = tu as
+! sub ça = ca
+! sub é = e
+! sub è = e
+! sub ë = e
+! sub ê = e
+! sub à = a
+! sub ï = i
+! sub î = i
+! sub ô = o
+
+//array
+
+! array colors = red blue green yellow
+
+//Begin
+
+> begin
+
++ request
+*<get begin> == undefined => {topic=user}{ok}
+- {ok}
+
+< begin
