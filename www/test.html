@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -6,18 +6,19 @@
         <meta name="msapplication-tap-highlight" content="no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 		<link rel="stylesheet" type="text/css" href="css/test.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/test.js"></script>
         <title>Captives</title>
     </head>
     <body>
-		<h1>Test de personnalit&eacute </h1>
+		<img src="img/digipal.png" id="digipal" />
+		<h1 style="text-align: center;">TEST DE PERSONNALIT&Eacute</h1>
 		<hr/>
-		<h2 id="question">Question 1/5</br>A quel animal vous identifiez vous le plus ?</h2>
-		<div class="container">
-			<div><a href="2.html"><img src="img/test/1/1.png"></a></div>
-			<div><a href="2.html"><img src="img/test/1/2.png"></a></div>
-			<div><a href="2.html"><img src="img/test/1/3.png"></a></div>
-			<div><a href="2.html"><img src="img/test/1/4.png"></a></div>
-		</div>
+		<h2 id="questionNumber">Question 1/5</h2>
+		<p id="question">&Agrave quel animal vous identifiez-vous le plus ?</p>
+		<div class="square"><img class="content" id="img11" onClick="nextQuestion()"></div>
+		<div class="square"><img class="content" id="img12" onClick="nextQuestion()"></div>
+		<div class="square"><img class="content" id="img21" onClick="nextQuestion()"></div>
+		<div class="square"><img class="content" id="img22" onClick="nextQuestion()"></div>
     </body>
 </html>

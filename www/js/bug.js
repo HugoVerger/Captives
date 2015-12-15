@@ -4,7 +4,7 @@ setTimeout(function(){
 		$("#main").css("animation", "");
 		$("#main").removeClass("bug");
 		$("#main").addClass("phonecall");
-		var audio = new Audio('ringtone.mp3');
+		var audio = new Audio('data/ringtone.mp3');
 		audio.volume = 1;
 		audio.loop = true;
 		audio.play();

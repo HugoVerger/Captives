@@ -8,8 +8,8 @@ body {
 	-webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
 	background-color: black;
     font-family:Calibri,'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    margin:0px;
-    padding:0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .phonecall {

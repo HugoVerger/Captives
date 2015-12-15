@@ -1,4 +1,4 @@
-* {
+﻿* {
 	-webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
@@ -6,22 +6,22 @@ body {
 	-webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
 	-webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
 	-webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-	background-color: white;
+	background: linear-gradient(white, #D8D8D8);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: Calibri,'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     margin: 0px;
     padding: 0px;
 }
 
 h1, h2 {
-    color: #333;
     font-weight: normal;
-	text-align: center;
 	font-size: 6vmin;
-	margin: 4% 5% 0 5%;
+	margin: 0px;
 }
 
 hr {
-	width:60%;
+	width:75%;
 	height:3px;
 	-moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
@@ -31,12 +31,47 @@ hr {
     border-image: none;
     border-style: solid none none;
     border-width: 1px 0 0;
-    margin-bottom: 2%;
     margin-top: 2%;
 }
 
-.container {
-	position: relative;
-    width: 80%;
-	left: 10%;
+#questionNumber {
+	margin-top: 8vmin;
+	margin-bottom: 1%;
+	padding-left: 15%;
+}
+
+#question {
+	font-weight: normal;
+	font-size: 5vmin;
+	margin: 0 10% 0 10%;
+}
+
+#question:first-letter {
+	font-weight: bold;
+}
+
+#digipal {
+	height: 5vmin;
+	width: auto;
+    display: block;
+	margin: auto;
+	margin-top: 2%;
+	margin-bottom: 1%;
+}
+
+.square {
+    float: left;
+    margin: 5%;
+    padding-bottom: 40%;
+    position: relative;
+    width: 40%;
+	box-shadow: 0px 0px 2vmin #000;
+	border-radius: 1.5vmin;
+}
+
+.content {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	border-radius: 1.5vmin;
 }
