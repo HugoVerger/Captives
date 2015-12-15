@@ -1,0 +1,77 @@
+﻿* {
+	-webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+	-webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+	-webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+	-webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+	background-color: #E8E8E8;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Calibri,'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2 {
+    font-weight: normal;
+	font-size: 14vmin;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+hr {
+	width:60%;
+	height:3px;
+    border-color: #000;
+    border-image: none;
+    border-style: solid none none;
+    border-width: 1px 0 0;
+}
+
+#title {
+	margin-top: 8vh;
+}
+
+#digipal {
+	height: 40vmin;
+	width: auto;
+    display: block;
+	margin: 5vh auto 0;
+}
+
+#intro {
+	text-align: center;
+	font-weight: normal;
+	font-size: 6vmin;
+	margin: 8vh 10% 0 10%;
+}
+
+#loader {
+	margin-top: 8vh;
+    display: block;
+}
+
+#loadergif {
+	height: 5vh;
+    display: block;
+	margin: 0 auto;
+}
+
+#percent {
+	text-align: center;
+	font-weight: normal;
+	font-size: 7vmin;
+	margin: 1.5vh 0 0 0;
+}
+
+#start {
+	margin-top: 10vh;
+	display: none;
+}
+
+#startButton {
+	font-size: 8vmin;
+}
