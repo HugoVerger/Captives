@@ -6,7 +6,7 @@ body {
 	-webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
 	-webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
 	-webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-	background: linear-gradient(white, #D8D8D8);
+	background-color: #F0F0F0;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: Calibri,'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
