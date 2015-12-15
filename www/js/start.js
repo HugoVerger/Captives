@@ -4,7 +4,7 @@ function load() {
 	{
 		$("#loader").css("display", "none");
 		$("#start").css("display", "block");
-		$(document).bind("click", function() {
+		$("#start").bind("click", function() {
 			document.location.href='test.html';
 		});
 	}
