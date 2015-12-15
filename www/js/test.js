@@ -18,7 +18,7 @@
 function nextQuestion() {
 	if (questionNumber == 5)
 	{
-		document.location.href="chat.html";
+		document.location.href="result.html";
 	}
 	else
 	{

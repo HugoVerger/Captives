@@ -35,7 +35,7 @@ function loading_error (error) {
 
 //sendMessage() est éxécutée lorsque l'utilisateur envoie son message, c'est lorsqu'il presse Enter dans le navigateur
 function sendMessage () {
-	if (messages_sent > 2)
+	if (messages_sent > 4)
 	{
 		document.location.href="bug.html";
 	}

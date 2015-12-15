@@ -55,19 +55,11 @@ hr {
 	margin-bottom: 1%;
 }
 
-.square {
-    float: left;
-    margin: 5%;
-    padding-bottom: 40%;
-    position: relative;
-    width: 40%;
+.picture {
+	width: 60%;
+	height: auto;
+    margin-left: 20%;
+	margin-top: 5%;
 	box-shadow: 0px 0px 2vmin #000;
-	border-radius: 1.5vmin;
-}
-
-.content {
-	position: absolute;
-	height: 100%;
-	width: 100%;
 	border-radius: 1.5vmin;
 }
