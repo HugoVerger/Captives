@@ -7,14 +7,24 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 		<link rel="stylesheet" type="text/css" href="css/chat.css">
 		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/rivescript.js"></script>
-		<script type="text/javascript" src="js/chat.js"></script>
+		<!--<script type="text/javascript" src="http://code.responsivevoice.org/responsivevoice.js"></script>-->
+		<script type="text/javascript" src="js/anna/jshashtable.min.js"></script>
+		<script type="text/javascript" src="js/anna/anna.core.min.js"></script>
+		<script type="text/javascript" src="js/anna/anna.random.min.js"></script>
+		<script type="text/javascript" src="js/anna/anna.language.min.js"></script>
+		<script type="text/javascript" src="js/anna/anna.french.generic.js"></script>
+		<script type="text/javascript" src="js/anna/anna.neurons.min.js"></script>
+		<script type="text/javascript" src="js/anna/anna.net.input.js"></script>	
+		<script type="text/javascript" src="js/anna/anna.net.synthia.js"></script>
+		<script type="text/javascript" src="js/anna/anna.net.alone.js"></script>
+		<script type="text/javascript" src="js/anna/anna.net.output.js"></script>
+		<script type="text/javascript" src="js/anna/anna.interface.js"></script>
         <title>Captives</title>
     </head>
     <body>
 		<div id="background-image"></div>
 		<div id="chat">
-			<p class="bubble blue">Hello !<br/>I'm your new personal assistant. Ask me any question and I'll try to answer it!</p>
+			<p id="topbubble" class="bubble blue">Bonjour ! Je suis votre nouvel assistant. En quoi puis-je vous aider ?</p>
 			<p id="question" class="bubble white"></p>
 			<p id="answer" class="bubble blue"></p>
 		</div>

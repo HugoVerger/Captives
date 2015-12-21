@@ -9,7 +9,8 @@ setTimeout(function(){
 		audio.loop = true;
 		audio.play();
 		$(window).click(function() {
-			document.location.href="credits.html";
+			localStorage.setItem(1337, 1);
+			document.location.href="chat.html";
 		});
 	}, 4000);
 }, 3000);
