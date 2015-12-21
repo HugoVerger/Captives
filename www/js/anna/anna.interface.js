@@ -1,4 +1,4 @@
-﻿// Algorithmic Neural Network Architecture
+// Algorithmic Neural Network Architecture
 // Version 1.0
 // (c) Jean-Claude Heudin 2015
 
@@ -9,7 +9,7 @@
 var nnTimer = null;
 var nnLifeCount = 0;
 var messages_sent = 0;
-var buggued = false;
+var buggued = 0;
 
 window.onload = function() {
 	nnStart();
@@ -39,7 +39,7 @@ function nnLifePulse () {
 	nnAlone.propagate();
 	alone_speech = nAloneSelector.cval;
 
-	if (alone_speech != "") {
+	if ((alone_speech != "") && (buggued != 1)) {
 		$("#answer").text(alone_speech);
 		$("#answer").css("display", "block");
 		// text to speech
