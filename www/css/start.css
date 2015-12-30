@@ -33,6 +33,12 @@ hr {
 
 #title {
 	margin-top: 8vh;
+    opacity: 0;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
 }
 
 /*#digipal {
@@ -43,7 +49,7 @@ hr {
 }*/
 
 #digipal {
-	height: 40vmin;
+	height: 60vmin;
 	width: auto;
     display: block;
 	margin: 0 auto 0;
@@ -51,11 +57,21 @@ hr {
     bottom: 0;
     left: 0;
     right: 0;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 #logo_holder {
-    height: 115px;
+    height: 150px;
     position: relative;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 #logo {
@@ -67,10 +83,16 @@ hr {
 }
 
 #intro {
+    opacity: 0;
 	text-align: center;
 	font-weight: normal;
 	font-size: 6vmin;
 	margin: 8vh 10% 0 10%;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
 }
 
 /*#loader {
