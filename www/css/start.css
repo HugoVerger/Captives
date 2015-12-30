@@ -1,4 +1,4 @@
-﻿* {
+* {
 	-webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
@@ -35,11 +35,35 @@ hr {
 	margin-top: 8vh;
 }
 
-#digipal {
+/*#digipal {
 	height: 40vmin;
 	width: auto;
     display: block;
 	margin: 5vh auto 0;
+}*/
+
+#digipal {
+	height: 40vmin;
+	width: auto;
+    display: block;
+	margin: 0 auto 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#logo_holder {
+    height: 115px;
+    position: relative;
+}
+
+#logo {
+    height: 115px;
+    overflow:hidden;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 
 #intro {
@@ -49,23 +73,23 @@ hr {
 	margin: 8vh 10% 0 10%;
 }
 
-#loader {
+/*#loader {
 	margin-top: 8vh;
     display: block;
-}
+}*/
 
 #loadergif {
 	height: 5vh;
     display: block;
 	margin: 0 auto;
 }
-
+/*
 #percent {
 	text-align: center;
 	font-weight: normal;
 	font-size: 7vmin;
 	margin: 1.5vh 0 0 0;
-}
+}*/
 
 #start {
 	margin-top: 10vh;
