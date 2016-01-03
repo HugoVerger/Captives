@@ -70,6 +70,7 @@ hr {
     left: 0;
     right: 0;
 	animation: growimage 6s ease-out 1;
+	-webkit-transform: translateZ(0);
 }
 
 @keyframes growimage {
@@ -85,6 +86,7 @@ hr {
 	font-size: 6vmin;
 	margin: 8vh 10% 0 10%;
 	animation: blinker 2s ease infinite;
+	-webkit-transform: translateZ(0);
 }
 
 @keyframes blinker {
