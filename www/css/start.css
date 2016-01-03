@@ -54,6 +54,7 @@ hr {
 	width: 100%;
     bottom: 0;
 	animation: grow 6s ease-out 1;
+	-webkit-transform: translateZ(0);
 }
 
 @keyframes grow {
