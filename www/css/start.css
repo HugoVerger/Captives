@@ -58,6 +58,7 @@ hr {
 
 @keyframes grow {
 	0% { height: 0vmin; }
+	80% { height: 60vmin; }
 	100% { height: 40vmin; }
 }
 
@@ -68,6 +69,13 @@ hr {
     bottom: 0;
     left: 0;
     right: 0;
+	animation: growimage 6s ease-out 1;
+}
+
+@keyframes growimage {
+	0% { height: 60vmin; }
+	80% { height: 60vmin; }
+	100% { height: 40vmin; }
 }
 
 #intro {
