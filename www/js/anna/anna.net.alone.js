@@ -26,7 +26,7 @@ var alone_waiting = [
 	"Vous vous êtes endormi?",
 	"Mon temps est précieux...",
 	"Patience... Patience..."];
-	
+
 var nAloneWaiting = new nRule(alone_waiting);
 nAloneWaiting.stamp = 0;
 nAloneWaiting.delay = 60;

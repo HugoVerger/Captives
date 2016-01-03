@@ -450,7 +450,7 @@ var generic_complex = [
 	"phenotype",
 	"reproduction",
 	"reproduire"];
-	
+
 var generic_simple = [
 	"simple",
 	"trivial",

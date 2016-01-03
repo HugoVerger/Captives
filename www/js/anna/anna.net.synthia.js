@@ -29,7 +29,7 @@ var synthia_hello = [
 	"Bienvenue.",
 	"Bonjour à vous.",
 	"Bonjour, c'est un plaisir de vous rencontrer."];
-	
+
 var nSynthiaHello = new nRule(synthia_hello);
 nSynthiaHello.operator = function () {
 	var cat = this.inputs[1].cval;
