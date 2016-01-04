@@ -6,7 +6,7 @@ setTimeout(function(){
 		audio.volume = 0.5;
 		audio.loop = true;
 		audio.play();
-		$(window).click(function() {
+		$(window).mousedown(function() {
 			localStorage.setItem(1337, 1);
 			document.location.href="chat.html";
 		});
