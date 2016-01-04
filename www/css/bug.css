@@ -12,7 +12,15 @@ body {
     padding: 0px;
 }
 
-.phonecall {
+#video {
+	display: block;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+}
+
+#background-image {
+	display: none;
 	background-image: url(../img/call.png);
 	-webkit-background-size: 100%; /* pour Chrome et Safari */
 	-moz-background-size: 100%; /* pour Firefox */
@@ -24,26 +32,4 @@ body {
 	height: 100%;
 	left: 0;
 	right: 0;
-}
-
-.bug {
-	position: absolute;
-	text-align: center;
-	width: 100%;
-	top: 20%;
-	font-size: 20vw;
-	margin: 0;
-	color:red;
-	text-shadow: 0 0 10vw #f00;
-	animation: blinker 0.75s linear infinite;
-	opacity: 0;
-}
-
-@keyframes blinker {
-	50% { opacity: 1.0; }
-}
-
-@keyframes fadeout {
-	0% { opacity: 0.5; }
-	100% { opacity: 0; }
 }
