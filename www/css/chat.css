@@ -13,7 +13,7 @@ body {
 }
 
 #background-image {
-	background-image: url(../img/dimitri.png);
+	background-image: url(../img/blueBG.png);
 	-webkit-background-size: 100%; /* pour Chrome et Safari */
 	-moz-background-size: 100%; /* pour Firefox */
 	-o-background-size: 100%; /* pour Opera */

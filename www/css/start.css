@@ -3,6 +3,17 @@
 }
 
 body {
+    height: 100%;
+	background-image: url(../img/blueBG.png);
+	-webkit-background-size: 100%; /* pour Chrome et Safari */
+	-moz-background-size: 100%; /* pour Firefox */
+	-o-background-size: 100%; /* pour Opera */
+	background-size: 100%; /* version standardisée */
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+body {
 	-webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
 	-webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
 	-webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
