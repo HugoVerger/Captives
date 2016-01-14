@@ -8,7 +8,7 @@ body {
 	-webkit-background-size: 100%; /* pour Chrome et Safari */
 	-moz-background-size: 100%; /* pour Firefox */
 	-o-background-size: 100%; /* pour Opera */
-	background-size: 100%; /* version standardisée */
+	background-size: 100%; /* version standardisÃ©e */
 	background-position: center;
 	background-repeat: no-repeat;
 }
@@ -40,6 +40,14 @@ hr {
     border-image: none;
     border-style: solid none none;
     border-width: 1px 0 0;
+    animation: ligne 6s ease-out 1;
+	-webkit-transform: translateZ(0);
+}
+
+@keyframes ligne {
+	0% { width: 0%; border-color: grey;}
+    90% {border-color: grey;}
+	100% { width: 60%; border-color: black;}
 }
 
 #title {
@@ -107,14 +115,22 @@ hr {
 
 #start {
 	margin-top: 10vh;
-    opacity: 0;
+    /*opacity: 0;
 	-webkit-transition: all 2s ease;
     -moz-transition: all 2s ease;
     -ms-transition: all 2s ease;
     -o-transition: all 2s ease;
-    transition: all 2s ease;
+    transition: all 2s ease;*/
 }
 
 #startButton {
 	font-size: 8vmin;
+	animation: grey 6s ease-out 1;
+	-webkit-transform: translateZ(0);
+}
+
+@keyframes grey {
+	0% { color: grey; }
+	90% { color: grey; }
+	100% { color: black; }
 }

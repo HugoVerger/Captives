@@ -1,4 +1,4 @@
-﻿* {
+* {
 	-webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
@@ -29,16 +29,20 @@ h1, h2 {
     font-weight: normal;
 	font-size: 6vmin;
 	margin: 0px;
+    display: none;
 }
 
 hr {
-	width:75%;
+	//width:75%;
+    width: 60%;
 	height:3px;
     border-color: #000;
     border-image: none;
     border-style: solid none none;
     border-width: 1px 0 0;
     margin-top: 2%;
+    animation: appear 3s ease-in 1;
+	-webkit-transform: translateZ(0);
 }
 
 #questionNumber {
@@ -51,19 +55,46 @@ hr {
 	font-weight: normal;
 	font-size: 5vmin;
 	margin: 0 10% 0 10%;
+    display: none;
 }
 
 #question:first-letter {
 	font-weight: bold;
 }
 
+#myDigipal {
+    margin-top: 8vh;
+    font-size: 14vmin;
+    text-align: center;
+}
+
 #digipal {
-	height: 5vmin;
+	//height: 5vmin;
+    height: 40vmin;
 	width: auto;
     display: block;
-	margin: auto;
-	margin-top: 2%;
-	margin-bottom: 1%;
+	margin: 5vh auto 0;
+}
+
+#intro {
+    text-align: center;
+	font-size: 6vmin;
+	margin: 8vh 10% 0 10%;
+    animation: appear 2s ease-out 1;
+	-webkit-transform: translateZ(0);
+}
+
+#start {
+    margin-top: 8vmin;
+    text-align: center;
+    font-size: 8vmin;
+    animation: appear 2s ease-in 1;
+	-webkit-transform: translateZ(0);
+}
+
+@keyframes appear {
+    0% {opacity: 0};
+    100%{opacity: 1};
 }
 
 .square {
@@ -74,6 +105,9 @@ hr {
     width: 40%;
 	box-shadow: 0px 0px 2vmin #000;
 	border-radius: 1.5vmin;
+    animation: ligne 6s ease-out 1;
+    opacity: 0;
+    display: none;
 }
 
 .content {
@@ -81,4 +115,5 @@ hr {
 	height: 100%;
 	width: 100%;
 	border-radius: 1.5vmin;
+    opacity: 0;
 }
