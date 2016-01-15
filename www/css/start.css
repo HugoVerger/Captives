@@ -2,31 +2,25 @@
 	-webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
-body {
+html, body {
     height: 100%;
-	background-image: url(../img/blueBG.png);
-	-webkit-background-size: 100%; /* pour Chrome et Safari */
-	-moz-background-size: 100%; /* pour Firefox */
-	-o-background-size: 100%; /* pour Opera */
-	background-size: 100%; /* version standardisée */
-	background-position: center;
-	background-repeat: no-repeat;
 }
 
 body {
 	-webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
 	-webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
 	-webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-	background-color: #E8E8E8;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+	background-image: linear-gradient(#10597e, #5baab1);
+	background-color: #5baab1;
+	background-repeat: no-repeat;
+	color: #facfbd;
     font-family: Calibri,'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     margin: 0px;
     padding: 0px;
 }
 
 h1, h2 {
-    font-weight: normal;
+    font-weight: lighter;
 	font-size: 14vmin;
 	margin: 0px;
 	padding: 0px;
@@ -36,7 +30,7 @@ h1, h2 {
 hr {
 	width:60%;
 	height:3px;
-    border-color: #000;
+    border-color: #facfbd;
     border-image: none;
     border-style: solid none none;
     border-width: 1px 0 0;
@@ -45,19 +39,21 @@ hr {
 }
 
 @keyframes ligne {
-	0% { width: 0%; border-color: grey;}
-    90% {border-color: grey;}
-	100% { width: 60%; border-color: black;}
+	0% { width: 0%;}
+	100% { width: 60%;}
 }
 
 #title {
 	margin-top: 8vh;
-    opacity: 0;
-    -webkit-transition: all 2s ease;
-    -moz-transition: all 2s ease;
-    -ms-transition: all 2s ease;
-    -o-transition: all 2s ease;
-    transition: all 2s ease;
+    opacity: 1;
+	animation: appear 7s ease 1;
+	-webkit-transform: translateZ(0);
+}
+
+@keyframes appear {
+	0% { opacity: 0; }
+	71% { opacity: 0; }
+	100% { opacity: 1; }
 }
 
 #logoholder {
@@ -100,9 +96,9 @@ hr {
 }
 
 #intro {
-    opacity: 0;
+    opacity: 1;
 	text-align: center;
-	font-weight: normal;
+    font-weight: lighter;
 	font-size: 6vmin;
 	margin: 8vh 10% 0 10%;
 	animation: blinker 2s ease infinite;
@@ -110,27 +106,15 @@ hr {
 }
 
 @keyframes blinker {
-	50% { opacity: 1.0; }
+	0% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
 }
 
 #start {
 	margin-top: 10vh;
-    /*opacity: 0;
-	-webkit-transition: all 2s ease;
-    -moz-transition: all 2s ease;
-    -ms-transition: all 2s ease;
-    -o-transition: all 2s ease;
-    transition: all 2s ease;*/
 }
 
 #startButton {
 	font-size: 8vmin;
-	animation: grey 6s ease-out 1;
-	-webkit-transform: translateZ(0);
-}
-
-@keyframes grey {
-	0% { color: grey; }
-	90% { color: grey; }
-	100% { color: black; }
 }
