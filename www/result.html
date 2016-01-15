@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -6,14 +6,30 @@
         <meta name="msapplication-tap-highlight" content="no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 		<link rel="stylesheet" type="text/css" href="css/result.css">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/test.js"></script>
+		<script type="text/javascript" src="js/result.js"></script>
         <title>Captives</title>
     </head>
     <body>
 		<img id="digipal" src="img/digipal.png"/>
-		<h1 style="text-align: center;">TEST DE PERSONNALIT&Eacute</h1>
+		<h1 style="text-align: center;">R&EacuteSULTAT DU TEST</h1>
 		<hr/>
-		<h2 id="questionNumber">Résultat</h2>
-		<p id="question">L'assistant ayant le plus grand indice de symbiométrie avec vous est <b>Dimitri</b>. Félicitations !</p>
-		<img class="picture" src="img/dimitri.png" onClick="localStorage.setItem(1337, 0);document.location.href='chat.html';">
+        <div id="intro"> Recherche de la meilleur compatibilité en cours</div>
+		<!--<h2 id="questionNumber">Résultat</h2>-->
+		<!--<p id="question">L'assistant ayant le plus grand indice de symbiométrie avec vous est <b>Dimitri</b>. Félicitations !</p>-->
+		<!--<img class="picture" src="img/dimitri.png" onClick="localStorage.setItem(1337, 0);document.location.href='chat.html';">-->
+        <div id="loading">
+            <img id="loader" src="img/loader.gif">
+            <p id="percent">0%</p>
+        </div>
+        <div id="validate"> 
+            <div id="find"> L'IA vous correspondant le mieux a été trouvée</div>
+            <div id="indice"></div>
+            <img id="graph" src="img/icon.png">
+            <div id="next" onClick="document.location.href='chat.html';"> Continuer </div>
+            <div id="result" onClick="start();">Voir mes résultats</div>
+            <hr class="down"/>
+        </div>
     </body>
 </html>

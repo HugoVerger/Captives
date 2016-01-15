@@ -1,4 +1,4 @@
-﻿* {
+* {
 	-webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
@@ -35,6 +35,10 @@ hr {
     margin-top: 2%;
 }
 
+hr.down {
+    width: 0%;
+}
+
 #questionNumber {
 	margin-top: 8vmin;
 	margin-bottom: 1%;
@@ -49,6 +53,70 @@ hr {
 
 #question:first-letter {
 	font-weight: bold;
+}
+
+#intro {
+    opacity: 1;
+	text-align: center;
+    font-weight: lighter;
+	font-size: 6vmin;
+	margin: 8vh 10% 0 10%;
+	animation: blinker 2s ease infinite;
+	-webkit-transform: translateZ(0);
+}
+
+@keyframes blinker {
+	0% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+#validate {
+    text-align: center;
+    font-weight: lighter;
+	font-size: 6vmin;
+	margin: 8vh 10% 0 10%;
+}
+
+#find {  
+    opacity: 0;
+}
+
+#indice {
+    opacity: 0;
+    padding-top: 20vmin;
+}
+
+#graph {
+    margin: 0 auto;
+    opacity: 0;
+    display: none;
+}
+
+#result {
+    opacity: 0;
+    padding-top: 20vmin;
+}
+
+#next {
+    display: none;
+    padding-top: 20vmin;
+}
+
+#loading {
+    padding-top: 20vmin;
+}
+
+#loader {
+    display: block;
+    margin: 0 auto 0;
+}
+
+#percent {
+    text-align: center;
+	font-weight: normal;
+	font-size: 7vmin;
+	margin: 1.5vh auto 0;
 }
 
 #digipal {

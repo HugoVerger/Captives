@@ -1,3 +1,5 @@
+var symbio;
+
 function init() {
 	$("#questionNumber").text("ÉTAPE " + questionNumber + "/10");
 	$("#img11").attr("src", "img/test/question" + questionNumber + "/1.png");
@@ -39,6 +41,34 @@ function start() {
 function nextQuestion() {
 	if (questionNumber == 10)
 	{
+        if (dmitry >= maxxy)
+        {
+            if (dmitry >= louise)
+            {
+                symbio = dmitry;
+                bestIA = "dmitry";
+            }
+            else
+            {
+                symbio = louise;
+                bestIA = "louise";
+            }
+        }
+        else 
+        {
+            if (maxxy >= louise)
+            {
+                symbio = maxxy;
+                bestIA = "maxxy";
+            }
+            else
+            {
+                symbio = louise;
+                bestIA = "louise";
+            }
+        }
+        symbio = symbio *10;
+        //alert(symbio + " " +  dmitry + " " + maxxy + " " + louise);
 		document.location.href="result.html";
 	}
 	else
@@ -149,3 +179,4 @@ function answer(answerNumber) {
 	}
 	nextQuestion();
 }
+
