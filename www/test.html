@@ -11,17 +11,16 @@
         <title>Captives</title>
     </head>
     <body>
-        <div id="myDigipal"> MyDigipal</div>
-		<img src="img/digipal.png" id="digipal" />
+		<div id="myDigipal">MyDigipal</div>
+		<img id="digipal" src="img/digipal.png"/>
 		<h1 style="text-align: center;">TEST DE PERSONNALIT&Eacute</h1>
         <div id="intro">MyDigipal va procéder à un test pour vous attribuer l'IA vous correspondant le mieux</div>
-        <div id="start">Lancer le test</div>
+        <div id="start" onClick="start();">Lancer le test</div>
 		<hr/>
-		<h2 id="questionNumber">Question 1/5</h2>
-		<p id="question">&Agrave quel animal vous identifiez-vous le plus ?</p>
-		<div class="square"><img class="content" id="img11" onClick="nextQuestion()"></div>
-		<div class="square"><img class="content" id="img12" onClick="nextQuestion()"></div>
-		<div class="square"><img class="content" id="img21" onClick="nextQuestion()"></div>
-		<div class="square"><img class="content" id="img22" onClick="nextQuestion()"></div>
+		<h2 id="questionNumber">ÉTAPE 1/10</h2>
+		<p id="question">Votre couleur...</p>
+		<div class="square"><img class="content" id="img11" onClick="answer('1');"></div>
+		<div class="square"><img class="content" id="img12" onClick="answer('2');"></div>
+		<div class="square" style="margin-left: 30%"><img class="content" id="img21" onClick="answer('3');"></div>
     </body>
 </html>
