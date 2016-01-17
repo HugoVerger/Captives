@@ -28,6 +28,7 @@ function init() {
 
 function start() {
 		$("#digipal").animate({height:"5vmin"}, 200);
+        $("#digipal").css("margin-top", "2%");
 		$("#myDigipal").css("display", "none");
 		$("#intro").css("display", "none");
 		$("#start").css("display", "none");
@@ -45,12 +46,12 @@ function nextQuestion() {
         {
             if (dmitry >= louise)
             {
-                symbio = dmitry;
+                var symbio = dmitry;
                 bestIA = "dmitry";
             }
             else
             {
-                symbio = louise;
+                var symbio = louise;
                 bestIA = "louise";
             }
         }
@@ -58,16 +59,15 @@ function nextQuestion() {
         {
             if (maxxy >= louise)
             {
-                symbio = maxxy;
+                var symbio = maxxy;
                 bestIA = "maxxy";
             }
             else
             {
-                symbio = louise;
+                var symbio = louise;
                 bestIA = "louise";
             }
         }
-        symbio = symbio *10;
         //alert(symbio + " " +  dmitry + " " + maxxy + " " + louise);
 		document.location.href="result.html";
 	}

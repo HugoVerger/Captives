@@ -5,10 +5,10 @@ function loading() {
         $("#loading").css("display", "none");
         $("#intro").css("display", "none");
         $("#find").animate({opacity:"1"}, 500);
-        $("#indice").animate({opacity:"1"}, 1000);
-        $("#result").animate({opacity:"1"}, 1500);
+        $("#indice").animate({opacity:"1"}, 1500);
+        $("#result").animate({opacity:"1"}, 2000);
         $(".down").animate({width:"75%"}, 1500);
-        $("#indice").text("indice de symbiométrie " + symbio + "%");
+        $("#indice").text("indice de symbiométrie 80%");
 	}
 	else
 	{
