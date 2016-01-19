@@ -108,7 +108,7 @@ function think () {
 
 function dialogue(fromHuman, dialoguetext) {
 	if (dialoguetext.trim() != "") {
-		if (currentBox < 8) {
+		if (currentBox < 5) {
 			if (fromHuman) {
 				$("#box" + currentBox).addClass("white");
 			}
