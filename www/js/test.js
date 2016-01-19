@@ -1,5 +1,3 @@
-var symbio;
-
 function init() {
 	$("#questionNumber").text("ÉTAPE " + questionNumber + "/10");
 	$("#img11").attr("src", "img/test/question" + questionNumber + "/1.png");
@@ -28,7 +26,7 @@ function init() {
 
 function start() {
 		$("#digipal").animate({height:"5vmin"}, 200);
-        $("#digipal").css("margin-top", "2%");
+		$("#digipal").css("margin-top", "2vh");
 		$("#myDigipal").css("display", "none");
 		$("#intro").css("display", "none");
 		$("#start").css("display", "none");
@@ -36,7 +34,7 @@ function start() {
 		$("h2").css("display", "block");
 		$("#question").css("display", "block");
 		$(".square").css("display", "block");
-		$("hr").animate({width:"70%"}, 1000);
+		$("hr").css("width", "70%");
 };
 
 function nextQuestion() {
@@ -47,28 +45,24 @@ function nextQuestion() {
             if (dmitry >= louise)
             {
                 var symbio = dmitry;
-                bestIA = "dmitry";
             }
             else
             {
                 var symbio = louise;
-                bestIA = "louise";
             }
         }
-        else 
+        else
         {
             if (maxxy >= louise)
             {
                 var symbio = maxxy;
-                bestIA = "maxxy";
             }
             else
             {
                 var symbio = louise;
-                bestIA = "louise";
             }
         }
-        //alert(symbio + " " +  dmitry + " " + maxxy + " " + louise);
+		symbio *= 10;
 		document.location.href="result.html";
 	}
 	else
@@ -179,4 +173,3 @@ function answer(answerNumber) {
 	}
 	nextQuestion();
 }
-
