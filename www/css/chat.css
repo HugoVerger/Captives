@@ -19,10 +19,10 @@ body {
 }
 
 #digipal {
-	height: 20vh;
+	height: 12vh;
 	width: auto;
     display: block;
-	margin: 5vh auto;
+	margin: 3vh auto;
 }
 
 #chat {
@@ -32,17 +32,9 @@ body {
 	box-shadow: 2px 2px 15px #333;
 }
 
-#question {
-	display: none;
-}
-
-#answer {
-	display: none;
-}
-
 .bubble
 {
-	display: inline-block;
+	display: none;
 	margin: 0px;
 	padding: 5%;
 	vertical-align: top;

@@ -30,4 +30,4 @@ function start() {
 window.onload = function() {
 	percent = 0;
 	loading();
-} 
+}

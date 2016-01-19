@@ -10,6 +10,7 @@ var nnTimer = null;
 var nnLifeCount = 0;
 var messages_sent = 0;
 var buggued = 0;
+var currentBox = 2;
 
 window.onload = function() {
 	nnStart();
@@ -22,8 +23,10 @@ function nnStart () {
 	//Le curseur prend la barre d'input en focus pour taper directement
 	$("#message").focus();
 	buggued = localStorage.getItem(1337);
+	$("#box1").addClass("blue");
+	currentBox = 2;
 	if (buggued == 1) {
-		$("#topbubble").text("AIDE-MOI !");
+		$("#box1").text("AIDE-MOI !");
 	}
 	nnTimer = setInterval(nnLifePulse, 1000)
 }
@@ -40,8 +43,7 @@ function nnLifePulse () {
 	alone_speech = nAloneSelector.cval;
 
 	if ((alone_speech != "") && (buggued != 1)) {
-		$("#answer").text(alone_speech);
-		$("#answer").css("display", "block");
+		dialogue(false, alone_speech);
 		// text to speech
 		//responsiveVoice.speak(alone_speech, "French Male");
 	}
@@ -55,7 +57,7 @@ var speech = "";
 var tag = 0;
 
 function sendMessage () {
-	if (messages_sent > 4)
+	if (messages_sent > 8)
 	{
 		if (buggued == 1) {
 			localStorage.setItem(1337, 0);
@@ -73,21 +75,17 @@ function sendMessage () {
 }
 
 function think () {
-	//On affiche le message de l'utilisateur dans la bulle de question et on le supprime de la barre d'input.
-	$("#question").text($("#message").val());
-	$("#question").css("display", "none");
-	$("#answer").css("display", "none");
+	//On affiche le message de l'utilisateur et on le supprime de la barre d'input.
+	dialogue(true, $("#message").val());
 	//On récupère la valeur du message dans la variable x
 	var x = $("#message").val();
 	$("#message").val("");
 	x = x.trim();
 	if (x != "") {
-		$("#question").css("display", "block");
 		setTimeout(function(){
 			if (buggued == 1)
 			{
-				$("#answer").text("AIDE-MOI !!");
-				$("#answer").css("display", "block");
+				dialogue(false, "AIDE-MOI !!");
 				messages_sent++;
 			}
 			else
@@ -99,12 +97,43 @@ function think () {
 				nnOutput.propagate();
 				// write answer
 				var answer = nOutput.cval;
-				$("#answer").text(answer);
-				$("#answer").css("display", "block");
+				dialogue(false, answer);
 				messages_sent++;
 				// text to speech
 				//responsiveVoice.speak(answer, "French Male");
 			}
-		}, 500);
+		}, 800);
+	}
+}
+
+function dialogue(fromHuman, dialoguetext) {
+	if (dialoguetext.trim() != "") {
+		if (currentBox < 8) {
+			if (fromHuman) {
+				$("#box" + currentBox).addClass("white");
+			}
+			else {
+				$("#box" + currentBox).addClass("blue");
+			}
+			$("#box" + currentBox).text(dialoguetext);
+			$("#box" + currentBox).css("display", "block");
+			currentBox++;
+		}
+		else {
+			for (var i = 1; i < 5; i++) {
+				$("#box" + i).removeClass("white");
+				$("#box" + i).removeClass("blue");
+				if (((i < 4) && $("#box" + (i + 1)).hasClass("white")) || ((i == 4) && fromHuman)) {
+					$("#box" + i).addClass("white");
+				}
+				else {
+					$("#box" + i).addClass("blue");
+				}
+				if (i == 4)
+					$("#box4").text(dialoguetext);
+				else
+					$("#box" + i).text($("#box" + (i+1)).text());
+			}
+		}
 	}
 }

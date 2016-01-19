@@ -19,14 +19,16 @@
 		<script type="text/javascript" src="js/anna/anna.net.alone.js"></script>
 		<script type="text/javascript" src="js/anna/anna.net.output.js"></script>
 		<script type="text/javascript" src="js/anna/anna.interface.js"></script>
+		<script type="text/javascript" src="js/preventbackbutton.js"></script>
         <title>Captives</title>
     </head>
     <body>
 		<img src="img/digipal.png" id="digipal" />
 		<div id="chat">
-			<p id="topbubble" class="bubble blue">Bonjour ! Je suis votre nouvel assistant. En quoi puis-je vous aider ?</p>
-			<p id="question" class="bubble white"></p>
-			<p id="answer" class="bubble blue"></p>
+			<p id="box1" class="bubble" style="display: block;">Bonjour ! Je suis votre nouvel assistant. En quoi puis-je vous aider ?</p>
+			<p id="box2" class="bubble"></p>
+			<p id="box3" class="bubble"></p>
+			<p id="box4" class="bubble"></p>
 		</div>
 		<div id="writer">
 			<form onSubmit="return sendMessage();">

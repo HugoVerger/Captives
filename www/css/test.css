@@ -13,7 +13,7 @@ body {
 	background-image: linear-gradient(#10597e, #5baab1);
 	background-color: #5baab1;
 	background-repeat: no-repeat;
-	color: #facfbd;
+	color: white;
     font-family: Calibri,'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     margin: 0px;
     padding: 0px;
@@ -30,7 +30,7 @@ hr {
     width: 60%;
 	height:3px;
 	opacity: 1;
-    border-color: #facfbd;
+    border-color: white;
     border-image: none;
     border-style: solid none none;
     border-width: 1px 0 0;
