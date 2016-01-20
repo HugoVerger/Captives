@@ -25,16 +25,16 @@ function init() {
 }
 
 function start() {
-		$("#digipal").animate({height:"5vmin"}, 200);
-		$("#digipal").css("margin-top", "2vh");
-		$("#myDigipal").css("display", "none");
-		$("#intro").css("display", "none");
-		$("#start").css("display", "none");
-		$("h1").css("display", "block");
-		$("h2").css("display", "block");
-		$("#question").css("display", "block");
-		$(".square").css("display", "block");
-		$("hr").css("width", "70%");
+	$("#digipal").animate({height:"5vmin"}, 200);
+	$("#digipal").css("margin-top", "2vh");
+	$("#myDigipal").css("display", "none");
+	$("#intro").css("display", "none");
+	$("#start").css("display", "none");
+	$("h1").css("display", "block");
+	$("h2").css("display", "block");
+	$("#question").css("display", "block");
+	$(".square").css("display", "block");
+	$("hr").css("width", "70%");
 };
 
 function nextQuestion() {
