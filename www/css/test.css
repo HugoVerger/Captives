@@ -28,25 +28,23 @@ h1, h2 {
 
 hr {
     width: 60%;
-	height:3px;
-	opacity: 1;
+	height: 3px;
     border-color: white;
     border-image: none;
     border-style: solid none none;
     border-width: 1px 0 0;
-    margin-top: 2%;
+	margin: 1vh auto;
 }
 
 #questionNumber {
-	margin-top: 8vmin;
-	margin-bottom: 2%;
+	margin: 4vh 0;
 	text-align: center;
 }
 
 #question {
 	font-weight: normal;
 	font-size: 5vmin;
-	margin: 0 10% 3% 10%;
+	margin: 0 10% 2vh 10%;
     display: none;
 }
 
@@ -76,7 +74,7 @@ hr {
 }
 
 #start {
-    margin-top: 6vh;
+    margin-top: 10vh;
     text-align: center;
 	font-weight: lighter;
     font-size: 8vmin;
@@ -90,7 +88,7 @@ hr {
     width: 40%;
 	background-color: rgba(0, 0, 0, 0.20);
 	box-shadow: 0px 0px 2vmin #000;
-	border-radius: 1.5vmin;
+	border-radius: 4vmin;
     display: none;
 }
 

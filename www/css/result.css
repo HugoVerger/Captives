@@ -26,33 +26,17 @@ h1, h2 {
 }
 
 hr {
-	width:75%;
-	height:3px;
+	width: 70%;
+	height: 3px;
     border-color: white;
     border-image: none;
     border-style: solid none none;
     border-width: 1px 0 0;
-    margin-top: 2%;
+	margin: 1vh auto;
 }
 
 hr.down {
     width: 0%;
-}
-
-#questionNumber {
-	margin-top: 8vmin;
-	margin-bottom: 1%;
-	padding-left: 15%;
-}
-
-#question {
-	font-weight: normal;
-	font-size: 5vmin;
-	margin: 0 10% 0 10%;
-}
-
-#question:first-letter {
-	font-weight: bold;
 }
 
 #intro {
@@ -73,9 +57,9 @@ hr.down {
 
 #validate {
     text-align: center;
-    font-weight: lighter;
+    font-weight: normal;
 	font-size: 6vmin;
-	margin: 8vh 10% 0 10%;
+	margin: 4vh 10% 0 10%;
 }
 
 #find {
@@ -123,9 +107,7 @@ hr.down {
 	height: 5vmin;
 	width: auto;
     display: block;
-	margin: auto;
-	margin-top: 2%;
-	margin-bottom: 1%;
+	margin: 2vh auto 0;
 }
 
 .picture {

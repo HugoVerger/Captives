@@ -27,6 +27,7 @@ function init() {
 function start() {
 	$("#digipal").animate({height:"5vmin"}, 200);
 	$("#digipal").css("margin-top", "2vh");
+	$("hr").css("width", "70%");
 	$("#myDigipal").css("display", "none");
 	$("#intro").css("display", "none");
 	$("#start").css("display", "none");
@@ -34,7 +35,6 @@ function start() {
 	$("h2").css("display", "block");
 	$("#question").css("display", "block");
 	$(".square").css("display", "block");
-	$("hr").css("width", "70%");
 };
 
 function nextQuestion() {

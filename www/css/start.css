@@ -34,6 +34,7 @@ hr {
     border-image: none;
     border-style: solid none none;
     border-width: 1px 0 0;
+	margin: 1vh auto;
 }
 
 #title {
