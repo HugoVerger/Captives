@@ -57,7 +57,8 @@ var speech = "";
 var tag = 0;
 
 function sendMessage () {
-	if (messages_sent > 8)
+	//On déclenche la phase de bug après un certain nombre de messages envoyés.
+	if (messages_sent > 4)
 	{
 		if (buggued == 1) {
 			localStorage.setItem(1337, 0);
@@ -102,7 +103,7 @@ function think () {
 				// text to speech
 				//responsiveVoice.speak(answer, "French Male");
 			}
-		}, 800);
+		}, 500);
 	}
 }
 

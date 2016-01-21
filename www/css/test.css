@@ -37,14 +37,14 @@ hr {
 }
 
 #questionNumber {
-	margin: 4vh 0;
+	margin: 4vh 0 3vh 0;
 	text-align: center;
 }
 
 #question {
 	font-weight: normal;
 	font-size: 5vmin;
-	margin: 0 10% 2vh 10%;
+	margin: 0 5% 1vh 5%;
     display: none;
 }
 

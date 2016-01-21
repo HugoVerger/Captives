@@ -44,10 +44,12 @@ function nextQuestion() {
         {
             if (dmitry >= louise)
             {
+				localStorage.setItem(1338,"Dmitry");
                 var symbio = dmitry;
             }
             else
             {
+				localStorage.setItem(1338,"Louise");
                 var symbio = louise;
             }
         }
@@ -55,14 +57,17 @@ function nextQuestion() {
         {
             if (maxxy >= louise)
             {
+				localStorage.setItem(1338,"Maxxy");
                 var symbio = maxxy;
             }
             else
             {
+				localStorage.setItem(1338,"Louise");
                 var symbio = louise;
             }
         }
 		symbio *= 10;
+		localStorage.setItem(1339,symbio);
 		document.location.href="result.html";
 	}
 	else
