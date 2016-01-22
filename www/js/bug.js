@@ -1,4 +1,4 @@
-/*setTimeout(function(){
+setTimeout(function(){
 	$("#video").fadeOut(2000, function()
 	{
 		$("#video").css("display", "none");
@@ -12,4 +12,4 @@
 			document.location.href="chat.html";
 		});
 	});
-}, 6000);*/
+}, 6000);

@@ -67,7 +67,7 @@ hr {
 
 #validate {
 	opacity: 0;
-	margin: 8vh 0 0;
+	margin: 6vh 0 0;
 }
 
 #result {
@@ -78,8 +78,8 @@ hr {
 }
 
 #graph {
-	margin: 6vh auto;
-	height: 48vh;
+	margin: 5vh auto;
+	height: 45vh;
 	width: auto;
 	display: none;
 }

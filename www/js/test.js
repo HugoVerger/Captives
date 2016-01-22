@@ -66,7 +66,7 @@ function nextQuestion() {
                 var symbio = louise;
             }
         }
-		symbio *= 10;
+		symbio = 50 + 5 * symbio;
 		localStorage.setItem(1339,symbio);
 		document.location.href="result.html";
 	}
