@@ -1,27 +1,72 @@
 function init() {
 	$("#questionNumber").text("ÉTAPE " + questionNumber + "/10");
 	$("#img11").attr("src", "img/test/question" + questionNumber + "/1.png");
-	$("#img12").attr("src", "img/test/question" + questionNumber + "/2.png");
-	$("#img21").attr("src", "img/test/question" + questionNumber + "/3.png");
+	$("#img21").attr("src", "img/test/question" + questionNumber + "/2.png");
+	$("#img22").attr("src", "img/test/question" + questionNumber + "/3.png");
 
 	if (questionNumber == 2)
+	{
 		$("#question").text("Vous êtes...");
+		$("#title11").text("Homme");
+		$("#title21").text("Femme");
+		$("#title22").text("Autre");
+	}
 	else if (questionNumber == 3)
+	{
 		$("#question").text("Vous êtes plutôt...");
+		$("#title11").text("Débordé");
+		$("#title21").text("Festif");
+		$("#title22").text("Intellect");
+	}
 	else if (questionNumber == 4)
+	{
 		$("#question").text("Un ami c'est d'abord...");
+		$("#title11").text("Animal");
+		$("#title21").text("Psychologue");
+		$("#title22").text("Médecin");
+	}
 	else if (questionNumber == 5)
+	{
 		$("#question").text("Jamais sans votre...");
+		$("#title11").text("Brosse à dents");
+		$("#title21").text("Nourriture");
+		$("#title22").text("Smartphone");
+	}
 	else if (questionNumber == 6)
+	{
 		$("#question").text("La réussite, c'est...");
+		$("#title11").text("Amitié");
+		$("#title21").text("Bonheur");
+		$("#title22").text("Reconnaissance");
+	}
 	else if (questionNumber == 7)
+	{
 		$("#question").text("Vous êtes plutôt...");
+		$("#title11").text("Café");
+		$("#title21").text("Thé");
+		$("#title22").text("Alcool");
+	}
 	else if (questionNumber == 8)
+	{
 		$("#question").text("Un bon moment, c'est...");
+		$("#title11").text("Silence");
+		$("#title21").text("Soirée");
+		$("#title22").text("Balade");
+	}
 	else if (questionNumber == 9)
+	{
 		$("#question").text("Vous préférez...");
+		$("#title11").text("Horreur");
+		$("#title21").text("Sci-Fi");
+		$("#title22").text("Comédie");
+	}
 	else if (questionNumber == 10)
+	{
 		$("#question").text("Votre peur...");
+		$("#title11").text("Insectes");
+		$("#title21").text("Vertige");
+		$("#title22").text("Isolement");
+	}
 }
 
 function start() {

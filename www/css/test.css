@@ -2,7 +2,7 @@
 	-webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
-body {
+html, body {
     height: 100%;
 }
 
@@ -92,11 +92,23 @@ hr {
     display: none;
 }
 
+.title {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 5%;
+	color: #55e0e6;
+	font-weight: lighter;
+	font-size: 5vmin;
+    text-align: center;
+	margin: 0;
+}
+
 .content {
 	position: absolute;
-	left: 10%;
-	top: 10%;
-	height: 80%;
-	width: 80%;
-	border-radius: 1.5vmin;
+	left: 17%;
+	top: 23%;
+	height: 66%;
+	width: 66%;
+	border-radius: 2vmin;
 }
