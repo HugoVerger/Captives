@@ -319,7 +319,7 @@ var generic_happy = [
 
 var generic_sad = [
 	"atriste",
-	"efondre",
+	"effondre",
 	"maleur",
 	"maleureusement",
 	"pleur",
@@ -332,8 +332,8 @@ var generic_sad = [
 	"tristesse"];
 
 var generic_surprise = [
-	"etonant",
-	"etonante",
+	"etonnant",
+	"etonnante",
 	"etonnement",
 	"impromptu",
 	"impromptue",
