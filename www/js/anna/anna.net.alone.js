@@ -19,13 +19,20 @@ lAloneInputs.addNeuron(nAloneInput);
 // ===============================================================================
 
 var alone_waiting = [
-	"Est-ce qu'il y a quelqu'un?",
-	"Est-ce que vous m'écoutez?",
-	"Etes-vous parti?",
-	"Vous êtes encore là?",
-	"Vous vous êtes endormi?",
-	"Mon temps est précieux...",
-	"Patience... Patience..."];
+	"Allo !",
+	"Y a quelqu'un ?",
+	"Houston, aurions-nous un problème ?"
+	"Vous m'entendez ?",
+	"Je vais faire un tour... Vous me dites quand vous y êtes.",
+	"Vous êtes là ?",
+	"J'ai tout mon temps. Enfin...",
+	"Prenez votre temps... Mais vite, ok ?",
+	"Vous seriez-vous endormi ?",
+	"Nous pouvons reprendre cette conversation une autre fois, si vous voulez.",
+	"On ne va peut-être pas y passer le réveillon.",
+	"J'ai d'autres clients, vous savez.",
+	"Vous me dites quand vous y êtes, ok ?"
+	"La première régle du Fight Club est on ne "];
 
 var nAloneWaiting = new nRule(alone_waiting);
 nAloneWaiting.stamp = 0;
@@ -45,9 +52,20 @@ nAloneWaiting.operator = function () {
 	}
 
 alone_gone = [
-	"Je suis patient, mais il ne faut pas abuser. Au revoir...",
-	"Je dois malheureusement mettre fin à cette conversation. Au revoir...",
-	"Vous êtes probablement parti... Je vais me déconnecter dans quelques secondes..."];
+	"Je suis patient, mais bon... Bye now.",
+	"Mon infinie patience... n'est pas infinie. Bye...",
+	"Ok, il suffit... Arrivederci !",
+	"Time's up ! Seeya.",
+	"Vous savez quoi, on remet ça à une prochaine. Bye !",
+	"On se rappelle, on se fait une bouffe, ok. Allez... salut.",
+	"Je vois... sympa ! J'me casse, bye !'.",
+	"Bon... ben j'y vais alors. Salut.",
+	"Je dois malheureusement mettre fin à cette passionnante conversation. Bye...",
+	"OOops, déjà ?! Je dois y aller là. À plus !",
+	"Allez... salut !",
+	"Ah c'qu'on s'emmerde ici... ah c'qu'on s'emmerde ici... Merde ici, merde ici, merde ici... tsoin, tsoin !",
+	"ZZzzzzZZZzzz... Hein, quoi... Mmmrpf... Salut !",
+	"Houston, nous avons un problème... Déconnexion ! DÉCONNEXION !"];
 
 var nAloneGone = new nRule(alone_gone);
 nAloneGone.stamp = 0;
