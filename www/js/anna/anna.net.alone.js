@@ -31,8 +31,7 @@ var alone_waiting = [
 	"Nous pouvons reprendre cette conversation une autre fois, si vous voulez.",
 	"On ne va peut-être pas y passer le réveillon.",
 	"J'ai d'autres clients, vous savez.",
-	"Vous me dites quand vous y êtes, ok ?"
-	"La première régle du Fight Club est on ne "];
+	"Vous me dites quand vous y êtes, ok ?"];
 
 var nAloneWaiting = new nRule(alone_waiting);
 nAloneWaiting.stamp = 0;
