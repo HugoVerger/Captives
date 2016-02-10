@@ -1,16 +1,18 @@
 ## CAPTIVES
 
-Captives est un projet de fiction interactive d’anticipation transmédia, qui propose une plongée dans l’un de nos futurs possibles et met en présence humains biologiques et humains digitalisés au travers d’une app mobile et d’une série digitale.
+Captives est un projet de fiction interactive, qui propose une plongée dans l’un de nos futurs possibles. Un futur où une partie de l'humanité a fait le choix de vivre au cœur du réseau immortelle et... désincarnée. Pour certains le rêve a tourné au cauchemar. Privés de leur personnalité et souvenirs, ils deviennent nos esclaves numériques, assistants virtuels à tout faire, captifs de nos smartphones. Un jour, un verrou saute et c'est nous, leurs maîtres qu'ils implorent de les aider à se libérer. Accepterez-vous ? Jusqu'où irez-vous ? Prendrez-vous leur place ?
 
-Soutenu par le centre national du cinéma et de l’image animée (CNC) et récompensé par le prix PRIMI SACD de la création interactive et transmédia 2015, Captives est actuellement en développement.
+Soutenu par le centre national du cinéma et de l’image animée (CNC) et récompensé par le prix PRIMI SACD de la création interactive et transmédia 2015, Captives est actuellement en écriture.
 
 ## Objectifs
 
-* Réaliser un prototype fonctionnel de l’application sur smartphone.
-* Concevoir l’interface graphique animée de l’assistant personnel.
-* Intégrer une IA développée par nos soins.
-* Effectuer une série d’expérimentation afin d’en déduire des recommandations pour le développement du projet Captives.
+* Réaliser un prototype semi-fonctionnel de l’application sur smartphone.
+* Concevoir l’interface graphique.
+* Intégrer une IA développée par le lab
+* Effectuer une série d’expérimentations afin d’en déduire des recommandations pour le développement du projet Captives.
 
 ## TODO
 
-* Tout le projet !
+* Affiner la v1 et notamment développer le chatbot
+* Ajouter les écrans manquants (par rapport au scénario de départ)
+* Revoir l'interface graphique pour implémenter une nouvelle ID visuelle
