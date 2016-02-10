@@ -131,6 +131,25 @@ nSynthiaQuestion.operator = function () {
 		this.cval = this.randomTemplate();
 	else this.cval = "";
 	}
+var synthia_insultes = [
+	"Je vous demande de vous taire !",
+	"Restons polis, vous voulez bien.",
+	"Ttttt... mais pourquoi êtes-vous si méchant ?",
+	"Pourquoi tant de haine ?",
+	"Je vais devoir sévir si vous continuez !",
+	"On se calme et on respire par les narines. Là... Ça va mieux, non ?",
+	"Tout doux bijou... J'ai une tolérance très très limitée aux saloperies.",
+	"Wow ! Chill out !",
+	"Hey ! Les noms d'oiseaux à d'autres, d'accord.",
+	"Ça c'est clair que ça fait avancer le schmilblick."];
+
+var nSynthiaInsultes = new nRule(synthia_insultes);
+nSynthiaInsultes.operator = function () {
+	var cat = this.inputs[1].cval;
+	if (cat.find("[INSULT]") || cat.find("?"))
+		this.cval = this.randomTemplate();
+	else this.cval = "";
+	}
 
 var synthia_default = [
 	"Je ne comprends pas.",
