@@ -146,7 +146,7 @@ var synthia_insultes = [
 var nSynthiaInsultes = new nRule(synthia_insultes);
 nSynthiaInsultes.operator = function () {
 	var cat = this.inputs[1].cval;
-	if (cat.find("[INSULT]") || cat.find("?"))
+	if (cat.find("[INSULT]"))
 		this.cval = this.randomTemplate();
 	else this.cval = "";
 	}
@@ -179,6 +179,7 @@ lSynthiaRules.addNeuron(nSynthiaYes);
 lSynthiaRules.addNeuron(nSynthiaNo);
 lSynthiaRules.addNeuron(nSynthiaSorry);
 lSynthiaRules.addNeuron(nSynthiaQuestion);
+lSynthiaRules.addNeuron(nSynthiaInsultes);
 lSynthiaRules.addNeuron(nSynthiaDefault);
 
 // ===============================================================================
