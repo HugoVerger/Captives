@@ -59,6 +59,8 @@ var generic_auxiliary = [
 	"suis"];
 
 var generic_pronoun = [
+	"elle",
+	"elles",
 	"il",
 	"ils",
 	"je",
@@ -73,14 +75,19 @@ var generic_pronoun = [
 
 var generic_possessive = [
 	"leur",
+	"leurs",
 	"ma",
 	"mes",
 	"mien",
+	"miens",
 	"mienne",
+	"miennes",
 	"mon",
+	"mes",
 	"nos",
 	"notre",
 	"sien",
+	"siens"
 	"ta",
 	"tes",
 	"ton",
@@ -111,13 +118,16 @@ var generic_number = [
 	"dix",
 	"dixieme",
 	"douze",
+	"douzieme",
 	"huit",
 	"huitieme",
 	"infini",
 	"mille",
 	"milliard",
+	"milliardieme",
 	"millieme",
 	"million",
+	"millionnieme",
 	"neuf",
 	"neuvieme",
 	"onze",
@@ -154,6 +164,8 @@ var generic_insult = [
 	"connard",
 	"connasse",
 	"conne",
+	"cretin",
+	"cretine",
 	"debile",
 	"ducon",
 	"encule",
@@ -269,7 +281,7 @@ var generic_disgust = [
 var generic_fear = [
 	"angoisse",
 	"angoisser",
-	"cauchemard",
+	"cauchemar",
 	"horreur",
 	"peur",
 	"peureuse",
