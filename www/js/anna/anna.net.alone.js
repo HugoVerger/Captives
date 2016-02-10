@@ -21,7 +21,7 @@ lAloneInputs.addNeuron(nAloneInput);
 var alone_waiting = [
 	"Allo !",
 	"Y a quelqu'un ?",
-	"Houston, aurions-nous un problème ?"
+	"Houston, aurions-nous un problème ?",
 	"Vous m'entendez ?",
 	"Je vais faire un tour... Vous me dites quand vous y êtes.",
 	"Vous êtes là ?",
