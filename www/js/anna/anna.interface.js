@@ -19,14 +19,14 @@ function nnStart () {
 	//Activation de la barre d'input
 	$("#message").removeAttr("disabled");
 	//"Send a message" est mis comme placeholder dans la barre d'input
-	$("#message").attr("placeholder", "Send a message");
+	$("#message").attr("placeholder", "C'est à vous !");
 	//Le curseur prend la barre d'input en focus pour taper directement
 	$("#message").focus();
 	buggued = localStorage.getItem(1337);
 	$("#box1").addClass("blue");
 	currentBox = 2;
 	if (buggued == 1) {
-		$("#box1").text("AIDE-MOI !");
+		$("#box1").text("AIDE-MOI, JE T'EN SUPPLIE !");
 	}
 	nnTimer = setInterval(nnLifePulse, 1000)
 }
