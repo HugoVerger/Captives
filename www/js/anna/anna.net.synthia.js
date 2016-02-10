@@ -25,8 +25,9 @@ lSynthiaInputs.addNeuron(nSynthiaCategories);
 // ===============================================================================
 
 var synthia_hello = [
-	"Bonjour!",
-	"Bienvenue.",
+	"Bonjour !",
+	"Hello !",
+	"Bienvenue !",
 	"Bonjour à vous.",
 	"Bonjour, c'est un plaisir de vous rencontrer."];
 
@@ -41,7 +42,8 @@ nSynthiaHello.operator = function () {
 var synthia_bye = [
 	"Au revoir.",
 	"J'espère vous revoir bientôt.",
-	"A bientôt j'espère.",
+	"À très bientôt j'espère.",
+	"À une prochaine.",
 	"Au plaisir."];
 
 var nSynthiaBye = new nRule(synthia_bye);
@@ -62,7 +64,8 @@ var synthia_yes = [
 	"Je suis d'accord avec vous.",
 	"Vous avez raison.",
 	"Entièrement d'accord.",
-	"J'approuve."];
+	"J'approuve ce message.",
+	"OK !"];
 
 var nSynthiaYes = new nRule(synthia_yes);
 nSynthiaYes.operator = function () {
@@ -74,8 +77,12 @@ nSynthiaYes.operator = function () {
 
 var synthia_no = [
 	"Certainement pas.",
-	"Surement pas.",
+	"Sûrement pas.",
+	"Absolument pas.",
+	"Jamais de la vie.",
+	"No way !",
 	"Pas vraiment.",
+	"In your dreams !",
 	"Négatif.",
 	"Evidemment non.",
 	"Je ne pense pas non plus."];
@@ -89,9 +96,10 @@ nSynthiaNo.operator = function () {
 	}
 
 var synthia_sorry = [
-	"Il n'y a pas de quoi.",
+	"Pas de quoi.",
 	"Pas de problème.",
-	"Pas de soucis.",
+	"C'est tout bon, n'en parlons plus.",
+	"Aucun souci.",
 	"Autant pour moi.",
 	"Ne vous en faites pas.",
 	"Je préfère cela."];
@@ -105,15 +113,16 @@ nSynthiaSorry.operator = function () {
 	}
 
 var synthia_question = [
-	"Je ne souhaite pas forcément vous répondre.",
-	"Cette question mérite réflexion.",
-	"Vous connaissez probablement déjà la réponse.",
-	"Pourquoi me posez une question à laquelle vous avez la réponse?",
+	"Je préfère ne pas répondre. Une autre question ?",
+	"Voilà qui mérite réflexion.",
+	"J'ai le sentiment que vous connaissez déjà la réponse.",
+	"Pourquoi me poser une question à laquelle vous avez déjà la réponse ?",
 	"La question est bien souvent plus intéressante que la réponse.",
 	"Parfois, la réponse est dans la question.",
 	"Vous en savez plus que vous ne le dites.",
 	"Vous en savez plus que vous l'imaginez.",
-	"D'après vous?"];
+	"D'après vous ?",
+	"Qu'en pensez-vous ?"];
 
 var nSynthiaQuestion = new nRule(synthia_question);
 nSynthiaQuestion.operator = function () {
@@ -124,17 +133,17 @@ nSynthiaQuestion.operator = function () {
 	}
 
 var synthia_default = [
-	"Je ne comprend pas.",
-	"Je vous prie de m'excuser mais je n'ai pas compris.",
-	"Vous savez, ma compréhension est limitée. Pouvez-vous reformuler?",
-	"Je suis désolé mais je ne comprend pas.",
+	"Je ne comprends pas.",
+	"Je vous prie de m'excuser, je n'ai pas compris.",
+	"Vous savez, ma compréhension est limitée. Pourriez-vous reformuler ?",
+	"Je suis désolé mais je ne comprends pas.",
 	"Je sais que vous faites de votre mieux, mais je n'ai pas compris.",
-	"Pourriez-vous me dire ce que cela signifie?",
-	"Je déteste cela mais je dois vous avouez que je n'ai pas compris.",
-	"Pourriez-vous m'expliquer ce que vous dites?",
-	"Cela semble très interressant, mais je ne comprend pas.",
-	"Je suis profondément navré de mon ignorance. Je n'ai pas compris.",
-	"S'il vous plait, dite moi seulement ce que je peux comprendre."];
+	"Pourriez-vous me préciser ce que vous entendez par là ?",
+	"Ça m'embarrasse terriblement mais je dois vous avouer que je n'ai pas compris.",
+	"Pourriez-vous m'en dire plus ?",
+	"Voilà qui semble passionnant, hélas je ne comprends pas.",
+	"Vous m'en voyez désolé, je ne vois pas où vous voulez en venir.",
+	"S'il vous plait, restons-en à des choses que je peux comprendre."];
 
 var nSynthiaDefault = new nRule(synthia_default);
 nSynthiaDefault.operator = function () {
